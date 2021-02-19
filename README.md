@@ -6,7 +6,13 @@ This script uses the terms senders and receivers, which are general terms for sa
 
 senders having a known position and receivers having and unknown position.
 
-## If :
+
+## The general relation can be described as :
+
+location_accuracy = time_accuracy * (average_sender_distance / receiver_distance)
+
+
+## Where :
 
 average_sender_position = (average x value of each sender, average y value of each sender)
 
@@ -18,6 +24,4 @@ time_accuracy = accuracy of the clock on the receiver
 
 location_accuracy = accuracy of the position
 
-## The general relation can be described as :
 
-location_accuracy = time_accuracy * (average_sender_distance / receiver_distance)
