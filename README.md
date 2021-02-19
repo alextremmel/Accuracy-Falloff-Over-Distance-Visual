@@ -5,7 +5,7 @@ Python script to visualize how the accuracy of a positioning system is affected 
 This script uses the terms senders and receivers, which are general terms for satelitte and phone, or ground station and space ship.
 senders having a knon position and receivers having and unknown position.
 
-## if :
+## If :
 
 average_sender_position = (average x value of each sender, average y value of each sender)
 
