@@ -20,8 +20,8 @@ average_sender_distance = average distance from each sender to the average_sende
 
 receiver_distance = distance from the receiver to the average_sender_position
 
-time_accuracy = accuracy of the clock on the receiver
+time_accuracy = accuracy of the clock on the receiver, higher is more accurate
 
-location_accuracy = accuracy of the position
+location_accuracy = accuracy of the position, higher is more accurate
 
 
