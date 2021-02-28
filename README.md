@@ -2,7 +2,7 @@
 
 Python script to visualize how the accuracy of a positioning system is affected by the distance between objects.
 
-This script uses the terms senders and receivers, which are general terms for satelitte and phone, or ground station and space ship.
+This script uses the terms senders and receivers, which are general terms for satellite and phone, or ground station and space ship.
 
 senders having a known position and receivers having and unknown position.
 
