@@ -103,36 +103,39 @@ def text_receiver(receivers, senders):
 
 def description():
 	ax.add_patch(patches.Rectangle((1200, 50), 350, 200, color="w", zorder=2, ec="r"))
+	ax.add_patch(patches.Rectangle((1200, 50), 350, 100, color="w", zorder=2, ec="r"))
+	ax.add_patch(patches.Rectangle((1200, 50), 150, 100, color="w", zorder=2, ec="r"))
 	plt_point(1220, 220, 'r+')
 	plt_text(1220, 220, "  distance", 10)
-	plt_text(1205, 160, "red + is a space ship, distance is the distance from\n the space ship to the average satellite position", 12)
+	plt_text(1205, 160, "red + is a spacecraft, distance is the distance from\nthe spacecraft to the average satellite position", 12)
 	plt_point(1220, 120, 'b+')
 	plt_text(1210, 70, "blue + is a satellite", 12)
 	circle = plt.Circle((1375, 120), 15, fill = False, zorder=3)
 	ax.add_artist(circle)
-	plt_text(1400, 60, "there are 3 circles\n intersecting at each\n ship each with\n a center at a\n different satellite", 12)
+	plt_text(1360, 60, "          there are 3 circles\n          intersecting at each\n          spacecraft position,\neach circle with a center\nat a different satellite", 12)
 
 # function to explain the goal of the visual
 
-def goal():
-	ax.add_patch(patches.Rectangle((50, 680), 350, 170, color="w", zorder=2, ec="r"))
+def explain():
+	ax.add_patch(patches.Rectangle((50, 650), 350, 200, color="w", zorder=2, ec="r"))
 	text = '''
-This visual shows that the further the space ship
-gets from the satellites, the lower the location
+This visual shows that the further the spacecraft
+moves from the satellites, the lower the location
 accuracy is, or if the red + was not there, the
-harder it would be to see its exact position.
-As the visual shows, with the closest space ship,
-even without the red +, it is easy to tell where the
-circles intersect, but as the distance increases,
-the red + is more and more needed
-to show exactly were the circles intersect.'''
-	plt_text(55, 690, text, 12)
-
+harder it would be to see its exactly where the 
+circles intersect. As the visual shows, with the
+closest spacecraft, even without the red +, it is
+easy to tell where the circles intersect, but as the
+distance increases, the red + is more and more
+needed to show exactly were the circles intersect.
+Each circle represents a signal that was sent out
+from one of the satellites.'''
+	plt_text(55, 655, text, 12)
 
 
 fig, ax = plt.subplots()
 ax.set(xlim=(0, 1600), ylim = (0, 900))
-plt.title("Accuracy Fall-off Over Distance")
+plt.title("Accuracy Falloff Over Distance")
 plt.xlabel("Arbitrary Unit")
 plt.ylabel("Arbitrary Unit")
 
@@ -142,5 +145,5 @@ plt_sender(senders)
 plt_signal(receivers, senders)
 text_receiver(receivers, senders)
 description()
-goal()
+explain()
 plt.show()
