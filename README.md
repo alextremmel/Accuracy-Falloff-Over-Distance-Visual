@@ -24,4 +24,4 @@ time_accuracy = accuracy of the clock on the receiver, higher is more accurate
 
 location_accuracy = accuracy of the position, higher is more accurate
 
-![Alt text](Accuracy-Falloff-Over-Distance.png?raw=true "Accuracy Falloff Over Distance")
+![Alt text](Accuracy-Falloff-Over-Distance.png?raw=true "Accuracy Falloff Over Distance Visual")
