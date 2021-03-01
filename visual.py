@@ -105,9 +105,9 @@ def description():
 	ax.add_patch(patches.Rectangle((1200, 50), 350, 200, color="w", zorder=2, ec="r"))
 	ax.add_patch(patches.Rectangle((1200, 50), 350, 100, color="w", zorder=2, ec="r"))
 	ax.add_patch(patches.Rectangle((1200, 50), 150, 100, color="w", zorder=2, ec="r"))
-	plt_point(1220, 220, 'r+')
-	plt_text(1220, 220, "  distance", 10)
-	plt_text(1205, 160, "red + is a spacecraft, distance is the distance from\nthe spacecraft to the average satellite position", 12)
+	plt_point(1220, 215, 'r+')
+	plt_text(1220, 215, "  xxx.x", 10)
+	plt_text(1280, 175, "is a spacecraft\nwith xxx.x distance\nfrom the average satellite position", 12)
 	plt_point(1220, 120, 'b+')
 	plt_text(1210, 70, "blue + is a satellite", 12)
 	circle = plt.Circle((1375, 120), 15, fill = False, zorder=3)
@@ -122,7 +122,7 @@ def explain():
 This visual shows that the further the spacecraft
 moves from the satellites, the lower the location
 accuracy is, or if the red + was not there, the
-harder it would be to see its exactly where the 
+harder it would be to tell exactly where the 
 circles intersect. As the visual shows, with the
 closest spacecraft, even without the red +, it is
 easy to tell where the circles intersect, but as the
